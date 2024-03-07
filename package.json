@@ -11,7 +11,11 @@
     "prettier": "npx prettier -w '**/*.{js,jsx,ts,tsx,json,yml.j2,yml,yaml,.*}'",
     "lint": "concurrently \"npx prettier --check '**/*.{js,jsx,ts,tsx,json,yml.j2,yml,yaml,.*}'\" \"npx eslint . --max-warnings=0\""
   },
+  "bin": {
+    "swaps": "./bin/vesting"
+  },
   "dependencies": {
+    "app-root-path": "^3.1.0",
     "commander": "^12.0.0",
     "lucid-cardano": "^0.10.7",
     "ts-res": "^1.1.1",
