@@ -34,6 +34,8 @@ program
     "<expiration>",
     "The date the script should become unlockable (in YYYY-MM-DD format)"
   )
-  .action(unlock);
+  .action((address: string, expiration: string) =>
+    unlock(program, address, expiration)
+  );
 
 export default program;
